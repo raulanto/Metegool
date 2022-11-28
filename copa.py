@@ -28,6 +28,7 @@ class Copa(pygame.sprite.Sprite):
         if self.rect.top <= 0:
             self.velocidad_aleatoria_y += 0.5
 
+
 class Gool(pygame.sprite.Sprite):
     def __init__(self):
         # Heredamos el init de la clase Sprite de Pygame

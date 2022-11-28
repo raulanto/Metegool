@@ -4,7 +4,6 @@
 import sys
 import pygame
 import configuracion
-
 import pelota
 import portero
 import porteria
