@@ -41,7 +41,6 @@ class Gool(pygame.sprite.Sprite):
         self.velocidad_aleatoria_y = -5
 
     def update(self):
-
         self.rect.y+=self.velocidad_aleatoria_y
         if self.rect.top <=0:
             self.kill()

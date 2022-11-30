@@ -21,13 +21,14 @@ carpeta_fomdo = os.path.join(carpeta_recursos, "fondo")
 carpeta_copa = os.path.join(carpeta_recursos, "copa")
 carpeta_musica=os.path.join(carpeta_recursos,"musica")
 
-# fondo de la ventana
+# fondo de la ventana (image,(largo,ancho)), (ruta,archivo)
+#          scale(image(os(carpeta,"fondo")),(1000,500))
 fondo = pygame.transform.scale(pygame.image.load(os.path.join(carpeta_fomdo, "fondo.jpg")), (1000, 500))
 
 #icono de la imagen
 icono=pygame.image.load(os.path.join(carpeta_personajes,"pelota.tif"))
 
-# tipografia
+#tipografia
 CONSOLA = pygame.font.match_font("04B_30")
 
 #Colores

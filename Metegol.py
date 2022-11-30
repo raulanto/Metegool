@@ -8,10 +8,15 @@ import pelota
 import portero
 import porteria
 import copa
+
 valor = 0
+
 pygame.init()
+#tamaño de la ventana
 ventana = pygame.display.set_mode((1000, 500))
+#titulo de la ventana
 pygame.display.set_caption("MeteGool")
+#icono de la ventana
 pygame.display.set_icon(configuracion.icono)
 
 # grupos
@@ -43,14 +48,11 @@ def entrada():
         grupo.update()
         grupo.draw(ventana)
         configuracion.muestra_texto(ventana, "-METEGOOL-", configuracion.BLANCO, 80, 500, 200)
-
         configuracion.muestra_texto(ventana, "-presiona cualquier tecla-", configuracion.NEGRO, 30, 500, 250)
-
         pygame.display.update()
 
 
 def juego(puntuacion):
-
     #pelota
     pelota1 = pelota.Pelota()
     grupo_pelota.add(pelota1)
@@ -70,7 +72,6 @@ def juego(puntuacion):
         #fps
         configuracion.reloj.tick(configuracion.fotogramas)
         tiempo +=10
-
         configuracion.cerrar()
         # actulizacion
         grupo_pelota.update()
