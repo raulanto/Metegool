@@ -19,9 +19,9 @@ class Portero(pygame.sprite.Sprite):
     def update(self):
         self.rect.x += self.velocidad_aleatoria_x
         # Limita el margen izquierdo
-        if self.rect.left < 300:
-            self.velocidad_aleatoria_x += 1
+        if self.rect.left <= 300:
+            self.velocidad_aleatoria_x += random.randrange(5,7)
         # Limita el margen derecho
-        if self.rect.right >700:
-            self.velocidad_aleatoria_x -= 1
+        if self.rect.right >=700:
+            self.velocidad_aleatoria_x -= random.randrange(5,7)
 

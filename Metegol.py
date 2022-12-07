@@ -1,5 +1,8 @@
 """
+                                Graficacion
  Metegol: El juego consiste en lanzar una pelota y dar en la porteria
+ developer :Raul antonio de la cruz hernandez , pedro jesus vazconselos duran
+
 """
 import sys
 import pygame
