@@ -1,12 +1,10 @@
 """
-    la clase Copa , muestra a l inicio de la pantalla moviendose arriba y abajo
+    la clase Copa , muestra al inicio de la pantalla moviendose arriba y abajo
 """
 
 import pygame
 import configuracion
 import os
-
-
 class Copa(pygame.sprite.Sprite):
     def __init__(self):
         # Heredamos el init de la clase Sprite de Pygame
@@ -28,7 +26,9 @@ class Copa(pygame.sprite.Sprite):
         if self.rect.top <= 0:
             self.velocidad_aleatoria_y += 0.5
 
-
+"""
+    La clase Gool muestra por Pantalla una imagen "GOOL"
+"""
 class Gool(pygame.sprite.Sprite):
     def __init__(self):
         # Heredamos el init de la clase Sprite de Pygame
@@ -39,7 +39,6 @@ class Gool(pygame.sprite.Sprite):
         self.rect.centerx = 500
         self.rect.bottom = 460
         self.velocidad_aleatoria_y = -5
-
     def update(self):
         self.rect.y+=self.velocidad_aleatoria_y
         if self.rect.top <=0:
