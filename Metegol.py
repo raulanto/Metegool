@@ -51,7 +51,7 @@ def entrada():
         grupo.update()
         grupo.draw(ventana)
         configuracion.muestra_texto(ventana, "-METEGOOL-", configuracion.BLANCO, 80, 500, 200)
-        configuracion.muestra_texto(ventana, "-presiona cualquier tecla-", configuracion.NEGRO, 30, 500, 250)
+        configuracion.muestra_texto(ventana, "-Precione una  tecla-", configuracion.NEGRO, 30, 500, 250)
         pygame.display.update()
 
 
